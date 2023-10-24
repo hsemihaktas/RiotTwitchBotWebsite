@@ -19,10 +19,10 @@ function Navbar({ changeLanguage, currentLang }) {
 
   return (
     <div className={`fixed top-0 w-full bg-[#7c81ad80] z-50`}>
-      <div className="container mx-auto py-4">
+      <div className="container mx-auto py-4 px-1 lg:px-0">
         <nav className="flex justify-between items-center">
           <div className="text-2xl font-bold text-gray-800">RiotTwitchBot</div>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-2 lg:space-x-4">
             <li className="text-2xl">
               <a href="https://github.com/ByDexterTR/RiotTwitchBot">
                 <i className="fa fa-github-alt" aria-hidden="true"></i>
@@ -33,8 +33,8 @@ function Navbar({ changeLanguage, currentLang }) {
                 className="bg-black text-white py-2 px-4 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-600"
                 onClick={handleDownload}
               >
-                <i className="fa fa-download mr-2" aria-hidden="true"></i>
-                {t("download", { lng: currentLang })}
+                <i className="fa fa-download lg:mr-2" aria-hidden="true"></i>
+                <span className="hidden lg:inline">{t("download", { lng: currentLang })}</span>
               </button>
             </li>
             <li className="text-2xl hover:text-white">

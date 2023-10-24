@@ -6,9 +6,9 @@ function Commands({ currentLang }) {
   return (
     <>
       <div className="w-full h-auto py-32">
-        <div className="flex">
-          <div className="w-1/2 flex justify-center items-center h-auto py-32 ">
-            <div className="codeContainer relative w-2/3 h-auto border-2 border-white rounded-lg text-[#E5C3A6] bg-[#7c81ad80]">
+        <div className="lg:flex">
+          <div className="w-full lg:w-1/2 lg:flex lg:justify-center lg:items-center h-auto py-32 px-2">
+            <div className="codeContainer relative w-full lg:w-2/3 h-auto border-2 border-white rounded-lg text-[#E5C3A6] bg-[#7c81ad80]">
               <div className="codeTitleLeft">League Of Legends</div>
               <div className="codeText p-10">
                 • !lolrank • {t("lolrank", { lng: currentLang })}
@@ -33,8 +33,8 @@ function Commands({ currentLang }) {
               </div>
             </div>
           </div>
-          <div className="w-1/2 flex justify-center items-center h-auto py-32 ">
-            <div className="codeContainer relative w-2/3 h-auto border-2 border-white rounded-lg text-[#E5C3A6] bg-[#7c81ad80]">
+          <div className="w-full lg:w-1/2 flex justify-center items-center h-auto py-32 px-2">
+            <div className="codeContainer relative w-full lg:w-2/3 h-auto border-2 border-white rounded-lg text-[#E5C3A6] bg-[#7c81ad80]">
               <div className="codeTitleRight">Teamfight Tactics</div>
               <div className="codeText p-10">
               • !tftrank • {t("tftrank", { lng: currentLang })}
@@ -50,8 +50,8 @@ function Commands({ currentLang }) {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <div className="codeContainer relative w-1/2 h-auto border-2 border-white rounded-lg text-[#E5C3A6] bg-[#7c81ad80]">
+        <div className="flex justify-center items-center px-2">
+          <div className="codeContainer relative w-full lg:w-1/2 h-auto border-2 border-white rounded-lg text-[#E5C3A6] bg-[#7c81ad80]">
             <div className="codeTitleLeft">Moderatör</div>
             <div className="codeText p-10">
               • !commands / !help • {t("commands", { lng: currentLang })}
