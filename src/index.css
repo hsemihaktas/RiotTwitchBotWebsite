@@ -1,13 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-image: url('./images/bodyImage.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
+  background-position: center; 
+  background-size:cover !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text{
+  font-family: 'Roboto', sans-serif;
+}
+
+.fa-github-alt:hover{
+  color: white;
+}
+
+.codeTitleLeft {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  height: 30px;
+  width: 250px;
+  background-color: #7C81AD;
+  border: 2px solid white ;
+  border-radius: 50px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.codeTitleRight{
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  height: 30px;
+  width: 250px;
+  background-color: #7C81AD;
+  border: 2px solid white ;
+  border-radius: 50px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.codeText{
+  font-family: 'Open Sans', sans-serif;
 }
