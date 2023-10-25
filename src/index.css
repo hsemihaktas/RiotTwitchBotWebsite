@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 
 body {
@@ -19,6 +18,7 @@ body {
 
 .text{
   font-family: 'Roboto', sans-serif;
+  font-weight: 900;
 }
 
 .codeTitleLeft {
@@ -31,7 +31,6 @@ body {
   border: 2px solid white ;
   border-radius: 50px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .codeTitleRight{
@@ -44,9 +43,9 @@ body {
   border: 2px solid white ;
   border-radius: 50px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .codeText{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
