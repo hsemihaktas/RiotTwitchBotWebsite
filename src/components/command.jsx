@@ -5,7 +5,7 @@ function Commands({ currentLang }) {
   const { t } = useTranslation();
   return (
     <>
-      <div className="w-full h-auto pt-64 pb-16 px-5 codeText text-base text-[#E5C3A6]">
+      <div className="w-full h-auto pt-32 lg:pt-64 pb-16 px-5 codeText text-base text-[#E5C3A6]">
         <div className="lg:flex bg-gradient-to-b from-[#7c81ad20] to-[#7c81ad80] rounded-lg px-5 pt-5 lg:gap-16">
           <div className="w-full lg:w-1/2 lg:flex lg:justify-center lg:items-center h-auto">
             <div className="codeContainer relative w-full h-auto border-2 border-white rounded-lg bg-[#7c81ad80]">

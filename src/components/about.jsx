@@ -6,7 +6,7 @@ const About = ({ currentLang }) => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="w-screen lg:w-full h-auto lg:flex items-center justify-center pt-48 gap-5">
+      <div className="w-screen lg:w-full h-auto lg:flex items-center justify-center pt-16 lg:pt-48 gap-5">
         <div className="text-[#E5C3A6] w-full py-10 px-5 lg:w-2/3 lg:pl-32">
           <div className="text text-l my-3 lg:text-2xl lg:my-5">
           {t("about", { lng: currentLang })}
