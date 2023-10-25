@@ -1,6 +1,5 @@
 import React from "react";
 import AboutPNG from "../images/aboutImage.png";
-import "font-awesome/css/font-awesome.min.css";
 import { useTranslation } from "react-i18next";
 
 const About = ({ currentLang }) => {

@@ -1,10 +1,11 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import React, { useState } from "react";
+import Update from "./update";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { faCircleDown } from "@fortawesome/free-regular-svg-icons";
+import {  faBoxOpen } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar({ changeLanguage, currentLang }) {
-
-  const { t } = useTranslation();
-
   const handleDownload = () => {
     const anchor = document.createElement("a");
     anchor.href = "/RiotTwitchBot-main.zip"; // Zip dosyanızın yolu
@@ -12,9 +13,14 @@ function Navbar({ changeLanguage, currentLang }) {
     anchor.click();
   };
 
-  const toggleLanguage = () => {
-    const newLang = currentLang === "en" ? "tr" : "en";
+  const handleSelectChange = (event) => {
+    const newLang = event.target.value;
     changeLanguage(newLang);
+  };
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
   };
 
   return (
@@ -23,26 +29,33 @@ function Navbar({ changeLanguage, currentLang }) {
         <nav className="flex justify-between items-center">
           <div className="text-2xl font-bold text-gray-800">RiotTwitchBot</div>
           <ul className="flex space-x-2 lg:space-x-4">
-            <li className="text-2xl">
+            <li className="text-2xl hover:text-[#E5C3A6]">
               <a href="https://github.com/ByDexterTR/RiotTwitchBot">
-                <i className="fa fa-github-alt" aria-hidden="true"></i>
+                <FontAwesomeIcon icon={faGithubAlt} />
               </a>
             </li>
-            <li>
-              <button
-                className="bg-black text-white py-2 px-4 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-600"
-                onClick={handleDownload}
-              >
-                <i className="fa fa-download lg:mr-2" aria-hidden="true"></i>
-                <span className="hidden lg:inline">{t("download", { lng: currentLang })}</span>
+            <li className="text-2xl hover:text-[#E5C3A6]">
+              <button onClick={handleDownload}>
+                <FontAwesomeIcon icon={faCircleDown} />
               </button>
             </li>
-            <li className="text-2xl hover:text-white">
-              <button onClick={toggleLanguage}>
-                {currentLang === "en" ? "EN" : "TR"}
+            <li className="text-2xl hover:text-[#E5C3A6]">
+              <button onClick={toggleModal}>
+                <FontAwesomeIcon icon={faBoxOpen} />
               </button>
+            </li>
+            <li className="text-2xl hover:text-[#E5C3A6]">
+              <select className="bg-black rounded text-[#E5C3A6]"value={currentLang} onChange={handleSelectChange}>
+                <option value="en">EN</option>
+                <option value="tr">TR</option>
+              </select>
             </li>
           </ul>
+          <Update
+            isOpen={showModal}
+            closeModal={toggleModal}
+            currentLang={currentLang}
+          />
         </nav>
       </div>
     </div>

@@ -21,10 +21,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.fa-github-alt:hover{
-  color: white;
-}
-
 .codeTitleLeft {
   position: absolute;
   top: -10px;
