@@ -45,21 +45,18 @@ function Commands({ currentLang }) {
               <br />
               !tftitem / !bis Karakter » {t("tftitem", { lng: currentLang })}
               <br />
-              !tftmeta » {t("tftmeta", { lng: currentLang })}
               </div>
             </div>
             <div className="codeContainer relative w-full h-auto border-2 border-white rounded-lg bg-[#7c81ad80]">
-            <div className="codeTitleRight">Moderatör</div>
+            <div className="codeTitleRight">{t("commandModerator", { lng: currentLang })}</div>
             <div className="p-10">
               !commands / !help » {t("commands", { lng: currentLang })}
               <br />
-              !lolsummonner Name » {t("lolsummoner", { lng: currentLang })}
+              !setsummoner Name » {t("setsummoner", { lng: currentLang })}
               <br />
-              !lolregion TR » {t("lolregion", { lng: currentLang })}
+              !setregion TR » {t("setregion", { lng: currentLang })}
               <br />
-              !tftsummoner » {t("tftsummoner", { lng: currentLang })}
-              <br />
-              !tftregion TR » {t("tftregion", { lng: currentLang })}
+              !setlang » {t("setlang", { lng: currentLang })}
               <br />
             </div>
           </div>

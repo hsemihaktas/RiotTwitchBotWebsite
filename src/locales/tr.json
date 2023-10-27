@@ -15,10 +15,9 @@
     "tftlastmatch":"Teamfight Tactics sihirdarının son maç istatisliklerini gösteren komut.",
     "tftavg":"Teamfight Tactics sihirdarının son maçlarındaki lig ortalamasını gösterir.",
     "tftitem":"Girilen karakterin Teamfight Tactics oyunundaki yaygın kullanılan eşya dizilimini gösteren komut.",
-    "tftmeta":"Teamfight Tactics oyunundaki en yaygın takımı gösteren komut.",
     "commands":"Komut listesini gösterir.",
-    "lolsummoner":"League of Legends istatislikleri çekilecek hesabın ismini ayarlama.",
-    "lolregion":"League of Legends istatislikleri çekilecek hesabın bölgesini ayarlama.",
-    "tftsummoner":"Teamfight Tactics istatislikleri çekilecek hesabın ismini ayarlama.",
-    "tftregion":"Teamfight Tactics istatislikleri çekilecek hesabın bölgesini ayarlama."
+    "setsummoner":"Oyun istatislikleri çekilecek hesabın ismini ayarlama.",
+    "setregion":"Oyun istatislikleri çekilecek hesabın bölgesini ayarlama.",
+    "setlang":"Botun hangi dilde hizmet vereceğini ayarlama.",
+    "commandModerator":"Moderatör"
   }

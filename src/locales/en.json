@@ -15,10 +15,9 @@
     "tftlastmatch": "Command to display Teamfight Tactics summoner's last match statistics.",
     "tftavg": "Shows the Teamfight Tactics Summoner's league average in their last match.",
     "tftitem": "Command that displays the common item lineup of the entered character in Teamfight Tactics.",
-    "tftmeta": "Command showing the most common team in Teamfight Tactics.",
     "commands": "Shows the command list.",
-    "lolsummoner": "Set the name of the account to pull League of Legends statistics from.",
-    "lolregion": "Set the region of the account to pull League of Legends statistics from.",
-    "tftsummoner": "Set the name of the account to pull Teamfight Tactics stats from.",
-    "tftregion": "Set the region of the account to pull Teamfight Tactics stats from."
+    "setsummoner": "Setting the name of the account to pull game statistics.",
+    "setregion": "Setting the region of the account to pull game statistics.",
+    "setlang": "Setting which language the bot will serve in.",
+    "commandModerator":"Moderator"
   }
