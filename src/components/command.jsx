@@ -23,11 +23,13 @@ function Commands({ currentLang }) {
                 <br />
                 !avgrank / !elo » {t("avgrank", { lng: currentLang })}
                 <br />
-                !mostplayed » {t("mostplayed", { lng: currentLang })}
+                !mostplayed / !main » {t("mostplayed", { lng: currentLang })}
                 <br />
                 !streak » {t("streak", { lng: currentLang })}
                 <br />
                 !mastery » {t("mastery", { lng: currentLang })}
+                <br />
+                !level » {t("level", { lng: currentLang })}
                 <br/>
                 !levels » {t("levels", { lng: currentLang })}
               </div>
