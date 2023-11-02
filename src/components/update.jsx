@@ -19,11 +19,16 @@ const Modal = ({ isOpen, closeModal, currentLang }) => {
 
   const filteredCommits = commitData.filter((commit) => {
     const title = commit.commit.message.split("\n")[0].toLowerCase();
-    return title.includes('sürüm') || title.includes('version');
+    return title.includes('sürüm') || title.includes('version') || title.match(/^(\d)/);
   });
 
   const replaceVersionWithSürüm = (title) => {
-    if (currentLang === "tr") return title.replace(/version/gi, "Sürüm");
+    if(title.match(/^(\d)/)){
+      const tit = "Sürüm " + title;
+      return replaceVersionWithSürüm(tit)
+    }
+    if (currentLang === "tr")
+    return title.replace(/version/gi, "Sürüm");
     else {
       return title.replace(/sürüm/gi, "Version");
     }
