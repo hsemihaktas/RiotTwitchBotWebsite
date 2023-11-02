@@ -10,7 +10,6 @@
     "mostplayed": "Command showing League of Legends Summoner's favourite champion.",
     "streak": "Command showing League of Legends Summoner's winning streak.",
     "mastery": "Command showing the League of Legends Summoner's champion mastery of summoners in the live game.",
-    "level": "Command showing the League of Legends Summoner's level of Summoner.",
     "levels": "Command showing the League of Legends Summoner's levels of Summoners in the live game.",
     "tftrank": "Command showing the Teamfight Tactics summoner's rank",
     "tftlastmatch": "Command to display Teamfight Tactics summoner's last match statistics.",
