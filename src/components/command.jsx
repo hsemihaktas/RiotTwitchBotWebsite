@@ -11,26 +11,26 @@ function Commands({ currentLang }) {
             <div className="codeContainer relative w-full h-auto border-2 border-white rounded-lg bg-[#7c81ad80]">
               <div className="codeTitleLeft">League Of Legends</div>
               <div className="p-10">
-                !lolrank » {t("lolrank", { lng: currentLang })}
+                !lolrank / !rank » {t("lolrank", { lng: currentLang })}
                 <br />
                 !lollastmatch / !lollastgame » {t("lollastmatch", { lng: currentLang })}
                 <br />
-                !runes / !run / !rune » {t("runes", { lng: currentLang })}
-                <br />
-                !matchup / !lolranks » {t("matchup", { lng: currentLang })}
-                <br />
                 !winrate / !wr » {t("winrate", { lng: currentLang })}
-                <br />
-                !avgrank / !elo » {t("avgrank", { lng: currentLang })}
-                <br />
-                !mostplayed / !main » {t("mostplayed", { lng: currentLang })}
                 <br />
                 !streak » {t("streak", { lng: currentLang })}
                 <br />
-                !mastery » {t("mastery", { lng: currentLang })}
+                !mostplayed / !main » {t("mostplayed", { lng: currentLang })}
                 <br />
                 !level » {t("level", { lng: currentLang })}
                 <br/>
+                !runes / !rune / !run » {t("runes", { lng: currentLang })}
+                <br />
+                !matchup / !lolranks » {t("matchup", { lng: currentLang })}
+                <br />
+                !avgrank / !elo » {t("avgrank", { lng: currentLang })}
+                <br />
+                !mastery » {t("mastery", { lng: currentLang })}
+                <br />
                 !levels » {t("levels", { lng: currentLang })}
               </div>
             </div>
